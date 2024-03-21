@@ -21,8 +21,8 @@ Recent test-time adaptation methods heavily rely on nuanced adjustments of batch
 <br>
 <br>
 
-| <img src="unmix_tns.png" alt="image" style="width:auto;height:auto;"> |
-|:--:|
+<img src="unmix_tns.png" alt="image" style="width:auto;height:auto;">
+
 <b>An Overview of UnMix-TNS.</b> Given a batch of non-i.i.d test features $\mathbf{z^t}\in \mathbb{R}^{B\times C \times L}$ at a temporal instance $t$, we mix the instance-wise statistics $(\tilde{\mu}^t, \tilde{\sigma}^t) \in \mathbb{R}^{B \times C}$ with $K$ UnMix-TNS components. The alignment of each sample in the batch with the UnMix-TNS components is quantified through similarity-derived assignment probabilities $p_k^t$. This aids both the <i>mixing</i> process and subsequent component updates for time $t+1$.
 
 
