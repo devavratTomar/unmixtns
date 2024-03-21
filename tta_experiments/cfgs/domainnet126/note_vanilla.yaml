@@ -1,0 +1,20 @@
+MODEL:
+  ADAPTATION: note_vanilla
+  ARCH: resnet50
+TEST:
+  BATCH_SIZE: 128
+CORRUPTION:
+  DATASET: domainnet126
+  SEVERITY:
+    - 5
+  TYPE:
+    - clipart
+    - painting
+    - sketch
+OPTIM:
+  BETA: 0.9
+  LR: 0.00025
+  METHOD: SGD
+  STEPS: 1
+  WD: 0.0
+CKPT_PATH: "./ckpt/domainnet126/best_real_2020.pth"
